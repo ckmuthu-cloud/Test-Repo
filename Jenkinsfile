@@ -1,24 +1,15 @@
-  def m(x){x}
+def m(x){x}
   pipeline {
       agent any
       stages {
           stage('S') {
               steps {
                   script {
-                      echo m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(
-                            m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(
-                            m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(
-                            m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(
-                            m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(
-                            "hello"
-                            )))))))))))))))))))))
-                            )))))))))))))))))))))
-                            )))))))))))))))))))))
-                            )))))))))))))))))))))
-                            )))))))))))))))))))))
+                      def r = "hello"
+                      r = m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(m(r)))))))))))))))))))))))))))))))))))))))))))))))))))))
+                      echo r
                   }
               }
           }
       }
   }
-
